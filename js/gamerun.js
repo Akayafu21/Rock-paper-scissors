@@ -23,7 +23,10 @@ var Yourhand;
 var Bothand;
 var winorlose;
 
-Count.innerHTML = sessionStorage.score;
+if(sessionStorage.score){
+    Count.innerHTML = sessionStorage.score;
+}
+
 
 
 
