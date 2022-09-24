@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<!-- 
+  Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again
+ -->
+
+</head>
+<body>
+<!-- rules -->
+  <div class="back" id="back"></div>
+  <div class="popup" id="popup">
+    <div class="upper">
+      <h1>rules</h1>
+      <img src="/images/icon-close.svg" alt="close" id="exit">
+    </div>
+    <img src="/images/image-rules-bonus.svg" alt="rules-bonus">
+  </div>
+<!-- rules end -->
+
+<!-- main -->
+  <main>
+    <header>
+      <img src="/images/logo-bonus.svg" alt="logo.pic">
+      <div class="score">
+        <p>score</p>
+        <h1 id="count">0</h1>
+      </div>
+    </header>
+
+    <!-- big box -->
+    <div class="bigbox online">
+      <div class="childbox item1"><div class="out yellow" id="scissors"><div class="in"><img src="/images/icon-scissors.svg" alt="Scissors"></div></div></div>
+      <div class="childbox item2"><div class="out cyan"id="spock"><div class="in"><img src="/images/icon-spock.svg" alt="Spock"></div></div></div>
+      <div class="childbox item3"><div class="out violet" id="lizard"><div class="in"><img src="/images/icon-lizard.svg" alt="Lizard"></div></div></div>
+      <div class="childbox item4"><div class="out blue" id="paper"><div class="in"><img src="/images/icon-paper.svg" alt="Paper"></div></div></div>
+      <div class="childbox item5"><div class="out red" id="rock"><div class="in"><img src="/images/icon-rock.svg" alt="Rock"></div></div></div>
+    </div>
+  <!-- big box end -->
+
+  <div class="gamerun offline">
+    <div class="head">
+      <h2>You Picked</h2>
+      <h2>The House Picked</h2>
+    </div>
+    <div class="gamebox">
+      <div class="picked">
+        <div class="out mid"><div class="in"><div class="showimg" id="yourimg"></div></div></div>
+      </div>
+      <div class="middlebox">
+        <h1>you lose</h1>
+        <button id="reround">play again</button>
+      </div>
+      <div class="picked">
+        <div class="out mid inactive"><div class="in"><div class="showimg" id="botimg"></div></div></div>
+      </div>
+      
+
+    </div>
+  </div>
+  </main>
+<!-- main end -->
+
+  <button id="rule" >rules</button>  
+  <script src="/js/rules.js"></script>
+  <script src="/js/gamerun.js"></script>
+</body>
+</html>
